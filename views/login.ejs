@@ -1,0 +1,30 @@
+<%- include ./common/header.ejs  %>
+<div class="container" style="width:40%;height: 400px;box-shadow: 0px 0px 5px #333333;margin-top:30px;border-radius: 5px;">
+    <div class="row">
+        <p style="width:60px;margin: 0 auto;margin-top:100px;font-size: 30px;color: #555">登录</p>
+        <div class="col-sm-4 col-sm-offset-3" style="padding-top: 30px;width:50%;margin-left:140px;">
+            <form class="form-horizontal" method="POST" action="http://localhost:4000/login">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" style="padding-right:0px;color: #555">账号</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="username" value placeholder="请输入您的账号" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的账号'">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label" style="padding-right:0px;color: #555"">密码</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" name="password" value placeholder="请输入您的密码" onfocus="this.placeholder=''" onblur="this.placeholder='请输入您的密码'">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-9 col-sm-10">
+                        <button type="submit" class="btn btn-default" style="margin-left:-105px;background:cornflowerblue;color: white">登录</button>
+                        <a style="float: right;margin-right: 180px;color:blue" href="http://localhost:4000/register">注册</a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+<%- include ./common/footer.ejs  %>

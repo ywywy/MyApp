@@ -1,0 +1,436 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.navbar {
+	width: 100%;
+	height: 85px;
+/*	background: #fff;
+	opacity: 0.8;*/
+}
+.logo {
+	width: 156px;
+	height: 48px;
+	margin-top: 26px;
+	margin-left: 10px;
+	font-size: 24px;
+	color: #35BD64;
+	text-align: center;
+	float: left;
+	font-weight: bold;
+}
+.nav {
+	/*width: 591.79px;*/
+	width: 751.79px;
+	height: 43.8px;
+	float: right;
+	padding: 30px 10px 20px 10px;
+}
+.navlink {   
+	color: #848484;
+	margin:0px 30px 0 60px;
+	font-size: 14px;
+	float: left;
+}
+.navlink:hover {
+	color: #35BD64;
+	border-bottom: 1px solid #333333;
+}
+.list {
+	display: none;
+    position: absolute;
+    margin-top: 56px;
+    z-index: 100;
+    width: 150px;
+    height: auto;
+    box-shadow: 0px 0px 5px #666;
+    margin-left: 388px;
+}
+.list li {
+	display: block;
+	height: auto;
+}
+.list li p {
+	width: auto;
+	font-size: 14px;
+	line-height: 40px;
+	display: block;
+	background: #fff;
+	height: auto;
+	text-align: center;
+	color: #2F124A;
+}
+.list li p:hover {
+	color: #35BD64;
+}
+.search{
+    width:80px;
+    height:40px;
+    border-radius:40px;
+    border:2px solid #35BD64;
+    position: absolute;
+    margin-top: -10px;
+    outline:none;
+    text-indent:12px;
+    color:#666;
+    font-size:16px;
+    margin-left: 40px;
+    -webkit-transition:width 0.5s;
+}
+.search:focus{
+    width:200px;
+}
+/*导航栏分割线*/
+.line {
+	width: 100%;
+	height: 1px;
+	background: #e2dddd;
+}
+/*主要内容部分*/
+.content {
+	width: 100%;
+	height: 2000px;
+}
+
+/*轮播开始*/
+#bannerimg {
+	width: 1165px;
+	height: 600px;	
+	margin-left: 177px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;           
+}
+.pic {
+    width: 5825px;
+    height: 600px;
+    margin-top: 40px;
+    position: absolute;
+    -webkit-animation-name: focusmap;/*动画名称*/
+    -webkit-animation-duration: 14s;/*动画持续时间*/
+    -webkit-animation-iteration-count: infinite;/*动画次数*/
+}
+.pic li{
+    float: left;
+}
+.pic li img{
+    width: 1165px;
+    height: 600px;
+}
+@keyframes focusmap {
+    0%,20%{
+        left: 0;
+    }
+    25%,40%{
+        left: -1165px;
+    }
+    45%,60%{
+        left: -2330px;
+    }
+    65%,80%{
+        left: -3495px;
+    }
+    85%,100%{
+        left: -4660px;
+    }   
+}
+
+@-webkit-keyframes focusmap {  /* Safari and Chrome */
+    0%,20%{
+        left: 0;
+    }
+    25%,40%{
+        left: -1165px;
+    }
+    45%,60%{
+        left: -2330px;
+    }
+    65%,80%{
+        left: -3495px;
+    }
+    85%,100%{
+        left: -4660px;
+    }   
+}
+
+@-o-keyframes focusmap {  /* Opera */
+    0%,20%{
+        left: 0;
+    }
+    25%,40%{
+        left: -1165px;
+    }
+    45%,60%{
+        left: -2330px;
+    }
+    65%,80%{
+        left: -3495px;
+    }
+    85%,100%{
+        left: -4660px;
+    }   
+}
+
+@-moz-keyframes focusmap {  /* Firefox */
+    0%,20%{
+        left: 0;
+    }
+    25%,40%{
+        left: -1165px;
+    }
+    45%,60%{
+        left: -2330px;
+    }
+    65%,80%{
+        left: -3495px;
+    }
+    85%,100%{
+        left: -4660px;
+    }   
+}
+/*轮播结束*/
+
+/*上一张、下一张*/
+.tabLeft {
+	position: absolute;
+    width: 80px;
+    height: 200px;
+    top: 200px;
+    color: #fff;
+    z-index: 999;
+    line-height: 50px;
+}
+.tabLeft span {
+    text-align: center;
+    font-size: 50px;
+    float: left;
+    z-index: 1000;
+    cursor: pointer;
+}
+.tabLeft:hover {
+	background: #34363C;
+	opacity: 0.5;	
+}
+.tabRight {
+	position: absolute;
+    width: 80px;
+    height: 200px;
+    top: 200px;
+    color: white;
+    z-index: 1000;
+    line-height: 50px;
+    margin-left: 1085px;
+}
+.tabRight span {
+    text-align: center;
+    font-size: 50px;
+    float: right;
+    z-index: 1000;
+    cursor: pointer;
+}
+.tabRight:hover {
+	background: #34363C;
+	opacity: 0.5;
+}
+.tabRight span:hover {
+	color: #fff;
+}
+/*标题 */
+.bg {
+	width: 100%;
+	height:162.8px;
+	margin-top: 40px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background: url(../img/bg.png) no-repeat;
+	background-size: 50%;
+	background-position: center;
+}
+.head {
+	font-size: 50px;
+	text-align: center;
+	color: black;
+}
+.green {
+	color: #35BD64;
+}
+.headtext {
+	color: black;
+	font-size: 18px;
+	margin-top: 20px;
+	text-align: center;
+}
+.center {
+	width: 100%;
+	height: 915px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.centertext {
+    font-size: 33px;
+    color: #35BD64;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+.rowbox {
+	width: 100%;
+	/*height: 787px;*/
+	height: 1058px;
+	padding-top: 40px;
+	background: url(../img/bd.jpg) no-repeat;
+	background-size: cover;
+}
+.row {
+	width: 70%;
+	height: 787px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.textrow {
+	width: 50.01%;
+	height: 165px;
+	float: left; 
+	margin-top: 20px;
+	border-radius: 10px;
+	border: 3px dashed #D4F1AE;
+	background: #fff;
+}
+
+/*动画显示效果 开始*/
+.textrow {
+	-webkit-animation-name: fadeIn; /*动画名称*/
+	-webkit-animation-duration: 5s; /*动画持续时间*/
+	-webkit-animation-iteration-count: 1; /*动画次数*/
+}
+@keyframes fadeIn {
+	0% {
+	opacity: 0; /*初始状态 透明度为0*/
+	}
+	25% {
+	opacity: 0.25;
+	}
+	50% {
+	opacity: 0.5;
+	}
+	75% {
+	opacity: 0.75;
+	}
+	100% {
+	opacity: 1; /*结尾状态 透明度为1*/
+	}
+}
+
+@-webkit-keyframes fadeIn {  /* Safari and Chrome */
+	0% {
+	opacity: 0; /*初始状态 透明度为0*/
+	}
+	25% {
+	opacity: 0.25;
+	}
+	50% {
+	opacity: 0.5;
+	}
+	75% {
+	opacity: 0.75;
+	}
+	100% {
+	opacity: 1; /*结尾状态 透明度为1*/
+	}
+}
+
+@-o-keyframes fadeIn {  /* Opera */
+	0% {
+	opacity: 0; /*初始状态 透明度为0*/
+	}
+	25% {
+	opacity: 0.25;
+	}
+	50% {
+	opacity: 0.5;
+	}
+	75% {
+	opacity: 0.75;
+	}
+	100% {
+	opacity: 1; /*结尾状态 透明度为1*/
+	}
+}
+
+@-moz-keyframes fadeIn {  /* Firefox */
+	0% {
+	opacity: 0; /*初始状态 透明度为0*/
+	}
+	25% {
+	opacity: 0.25;
+	}
+	50% {
+	opacity: 0.5;
+	}
+	75% {
+	opacity: 0.75;
+	}
+	100% {
+	opacity: 1; /*结尾状态 透明度为1*/
+	}
+}
+/*动画结束*/
+
+.textrow h2 {
+	font-size: 26px;
+	margin-top: 19px;
+	margin-bottom: 18px;
+	text-align: center;
+	color: #35BD64;
+}
+.textrow p {
+	width: 350px;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+	color: #666666;
+}
+.trybox {
+	width: 990px;
+	height: 52px;
+	margin: auto;
+}
+.trybox h2 {
+	color: #333333;
+	margin-top: 20px;
+	text-align: center;
+	font-weight: normal;
+}
+.trymore {
+	width: 688px;
+    height: 50px;
+	background: #fff;
+	border: 1px solid #e2e2e2;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	margin: 0 auto;
+	border-radius: 6px;
+	color: #333;
+	margin-top: 30px; 
+}
+.trymore:hover {
+	background: #35BD64;
+	color: #fff;
+}
+footer {
+	width: 100%;
+	height: 80px;
+	margin-top: 40px;
+	padding-top: 50px;
+	background: #D4F1AE;
+}
+footer p {
+	font-size: 12px;
+	text-align: center;
+	line-height: 5px;
+}

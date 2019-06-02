@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.login {
+	z-index: 2;
+	position: absolute;
+	width: 350px;
+	height: 500px;
+	border-radius: 5px;	
+	background: white;
+	box-shadow: 0px 0px 5px #333333;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -175px;
+	transition: all 1s;
+}
+.logintext {
+	font-size: 24px;
+	margin-top: 100px;
+	padding-left: 40px;
+	box-sizing: border-box;
+	color: #333333;
+	margin-bottom: 50px;
+}
+.center {
+	width: 100%;
+	height: 30px;
+	box-sizing: border-box;
+	padding: 0 40px;
+	margin-bottom: 30px;
+}
+.centerimg {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-top: 5px;
+}
+.centerimg img {
+	width: 20px;
+	height: 20px;
+}
+.centerinput {
+	float: left;
+	height: 30px;
+	width: 230px;
+	margin-left: 15px;	
+	position: relative;
+}
+.centerinput input {
+	z-index: 2;
+	transition: all 0.5s;
+	padding-left: 10px;
+	color: #333333;
+	width: 100%;
+	height: 30px;
+	border-top: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #cccccc;
+	box-sizing: border-box;/*为元素设定的宽度和高度决定了元素的边框盒。
+	为元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制。*/
+	outline:none;/*设置 4 个边框的样式*/
+	position: relative;
+}
+.centerinput input:focus {
+	border: 1px solid dodgerblue;
+}
+.inputtext1 {
+	background: white;
+	padding: 0 5px;
+	position: absolute;
+	z-index: 0;
+	opacity: 0;
+	height: 20px;
+	top: 50%;
+	margin-top: -10px;
+	font-size: 14px;
+	left: 5px;
+	color: dodgerblue;
+	line-height: 20px;
+	transition: all 0.5s;	
+}
+.inputtext2 {
+	background: white;
+	padding: 0 5px;
+	position: absolute;
+	z-index: 0;
+	opacity: 0;
+	height: 20px;
+	top: 50%;
+	margin-top: -10px;
+	font-size: 14px;
+	left: 5px;
+	color: dodgerblue;
+	line-height: 20px;
+	transition: all 0.5s;	
+}
+.inputtext3 {
+	background: white;
+	padding: 0 5px;
+	position: absolute;
+	z-index: 0;
+	opacity: 0;
+	height: 20px;
+	top: 50%;
+	margin-top: -10px;
+	font-size: 14px;
+	left: 5px;
+	color: dodgerblue;
+	line-height: 20px;
+	transition: all 0.5s;	
+}
+/*选择获得焦点的输入框，设置其样式*/
+input:focus ~.inputtext1 {
+	top: 0;
+	z-index: 3;
+	opacity: 1;
+	margin-top: -15px;
+}
+input:focus ~.inputtext2 {
+	top: 0;
+	z-index: 3;
+	opacity: 1;
+	margin-top: -15px;
+}
+input:focus ~.inputtext3 {
+	top: 0;
+	z-index: 3;
+	opacity: 1;
+	margin-top: -15px;
+}
+.btn {
+	cursor: pointer;/*光标呈现为指示链接的指针（一只手）*/
+	width: 250px;
+	height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: dodgerblue;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: white;
+    font-size: 12px;
+}

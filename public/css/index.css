@@ -1,0 +1,616 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body{
+	position:absolute;
+	width:100%;
+	height:100%;
+	min-width: 1380px;
+}
+.left {
+	width: 70px;
+	height: 100%;
+	float: left;
+	background-color: #f8f8f8;
+	border-right: 1px solid rgb(236,236,236);
+}
+.left .logo {
+	padding: 18px 20px 20px 18px;
+}
+.left .btn {
+	padding: 8px 20px 0px 15px;
+}
+.left .btn1 {
+	padding: 80px 20px 0px 15px;
+}
+.left div a {
+	cursor: pointer;
+}
+.left .user {
+	width: 36px;
+	border-top: 1px solid #e1e1e1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 17px;
+}
+.left .user a img {
+	width: 36px;
+	height: 36px;
+	border-radius: 18px;
+}
+.centre {
+	width: 350px;
+	height: 100%;
+	float: left;
+	position: relative;
+	border-right: 1px solid rgb(236,236,236);
+}
+.centre .head {
+	width: 100%;
+	height: 100px;
+	float: left;
+	border-bottom: 1px solid rgb(236,236,236);
+}
+.centre .head h2 {
+	padding-top: 25px;
+	margin-left: 25px;
+	font-size: 18px;
+    color: #2dbe60;
+}
+.centre .head span {
+	font-size: 12px;
+	margin-top: 25px;
+	margin-left: 25px;
+	display: inline-block;
+}
+.centre .head a {
+	display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+   	margin-right: 10px;
+    padding: 6px 15px;
+    background: #2dbe60;
+    border-radius: 3px;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+.centre .head a:hover {
+	background: #2DAA60;
+}
+.centre .content {
+	width: 100%;
+    position:absolute;
+	top: 100px;
+	bottom: 0px;
+    overflow-x: hidden;
+}
+.centre .content .note {
+	width: 97%;
+	height: 120px;
+	padding: 5px;
+	color: #2dbe60;
+	border-bottom: 1px solid rgb(236,236,236);
+	cursor: pointer;
+}
+.centre .content .note:hover {
+    background-color: rgba(43, 181, 92, 0.9);
+    color: white;
+}
+.centre .content .selected {
+	width: 97%;
+	padding: 0;
+	border: 5px solid rgb(236,236,236);
+}
+.centre .content .selected:hover {
+	padding: 5px;
+	width: 100%;
+	border: 0;
+}
+.centre .content .note .title {
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 5px;
+	width: 280px;
+	height: 20px;
+	font: 16px;
+	overflow:hidden;
+}
+.centre .content .note .delete {
+	float: right;
+	position: relative;
+}
+.centre .content .selected .delete {
+	position: relative;
+	right: 10px;
+}
+.centre .content .note .date {
+	font-size: 11px;
+	height: 21px;
+	margin-left:10px;
+	margin-top: 5px;
+	display: block;
+	overflow:hidden;
+	color: #4a4a4a;
+}
+.centre .content .note .text {
+	display: block;
+	margin-left:10px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	width: 95%;
+	height: 52%;
+	font-size: 12px;
+	line-height: 1.8em;
+	overflow:hidden;
+	color: #4a4a4a;
+}
+.right {
+	width: 69%;
+	height: 100%;
+	float: right;
+}
+.right .position {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+.right .position .head {
+	width: 100%;
+	height: 40px;
+}
+.right .position .head a {
+	display: inline-block;
+	text-align: center;
+	margin-top: 10px;
+	padding: 6px 20px;
+	background: #2dbe60;
+	border-radius: 3px;
+	color: white;
+	float: right;
+	cursor: pointer;
+}
+.right .position .head a:hover {
+	background: #2DAA60;
+}
+.right .position .toolbar_title {
+	width: 100%;
+	height: 36px;
+	position: relative;
+}
+.right .position .toolbar_title #movenote {
+	cursor: pointer;
+}
+.right .position .toolbar_title #movenote img {
+	position: relative;
+	top: 3px;
+}
+.right .position .toolbar_title #movenote span {
+	display: inline-block;
+	padding-left: 2px;
+	height: 21px;
+	max-width: 30%;
+	position: relative;
+	top: 5px;
+	overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.right .position .title {
+	width: 100%;
+	height: 52px;
+	color: #2dbe60;
+	border-top: 1px solid rgb(236,236,236);
+	margin-bottom: 20px;
+}
+.right .position .title input {
+	display: block;
+	width: 100%;
+	font-size: 28px;
+	border: 0;
+    color: #2dbe60;
+    outline: none;
+    padding-top: 20px;
+    overflow: hidden;/* 隐藏溢出内容 */
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.right .position .title input::-webkit-input-placeholder{
+    color: #2dbe60;
+}
+.right .position .title input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #2dbe60;
+}
+.right .position .title input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: #2dbe60;
+}
+.right .position .title input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color: #2dbe60;
+}
+.right .position .text_toolbar {
+	margin-top: 10px;
+}
+.right .position .text {
+	width: 100%;
+	min-height: 50%;
+	max-height: 70%;
+    overflow-x: hidden;
+}
+.right .position .text .w-e-text {
+	padding: 0;
+	overflow-y: hidden; 
+	border-bottom: 1px solid rgb(236,236,236);
+}
+/* 弹窗1  */
+.userinfo {
+	width: 354px;
+	height: 394px;
+	display: none;
+	z-index:9999;
+	position: absolute;
+	top: 46%;
+	left: 65px;
+	border-radius:5px;
+	border:solid 1px #e1e1e1;
+	background-color:#fff;
+}
+.userinfo .position {
+	margin: 0 auto;
+	width: 90%;
+	padding-bottom: 10px;
+}
+.userinfo .position div {
+	width: 100%;
+}
+.userinfo .position .btn {
+	width: 320px;
+	height: 40px;
+	border-radius: 5px;
+	border: 0;
+	margin-top: 20px;
+	color: white;
+	font-family:gotham, helvetica, arial, sans-serif;
+	font-weight: bold;
+	background: #20a6a5;
+	background: linear-gradient(37deg, #20a6a5 0, #5bc583 100%);
+	cursor: pointer;
+}
+.userinfo .position div a .user_pportrait {
+	margin-top: 20px;
+	margin-left:41%;
+	border-radius: 50%;
+}
+.userinfo .position div .username {
+	text-align: center;
+	margin-top: 5px;
+	display: block;
+	color: #4a4a4a;
+	font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.userinfo .position .option {
+	border-top: 1px solid #e1e1e1;
+	width: 100%;
+	padding-top: 20px;
+	margin-top: 30px;
+	font-size: 13px;
+}
+.userinfo .position .option a {
+	width: 100%;
+	height: 32px;
+	display: block;
+	color: #4a4a4a;
+	text-decoration: none;
+}
+.userinfo .position .option a:hover {
+	background: rgb(45,190,96);
+	color: white;
+}
+.userinfo .position .option img {
+	position: relative;
+	top: 8px;
+	margin-left: 5px;
+}
+.userinfo .position .option span {
+	position: relative;
+	top: 6px;
+}
+/* 弹窗2  */
+.right .position .toolbar_title .notebookOption {
+	width: 360px;
+	display: none;
+	z-index:99999;
+	position: absolute;
+	top: 40px;
+	border-radius:5px;
+	border: solid 1px #e1e1e1;
+	background-color:#fff;
+}
+.right .position .toolbar_title .notebookOption .middle {
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	max-height: 366px;
+	border: 0;
+}
+.right .position .toolbar_title .notebookOption .position {
+	width: 80%;
+	margin: 0 auto;
+	border: 0;
+}
+.right .position .toolbar_title .notebookOption div {
+	width: 80%;
+	margin: 0 auto;
+	height: 60px;
+	border-top: solid 1px #e1e1e1;
+}
+.right .position .toolbar_title .notebookOption .head {
+	width: 100%;
+	height: 60px;
+	border: 0;
+}
+.right .position .toolbar_title .notebookOption .head .text {
+    border: solid 1px #e1e1e1;
+    font-size: 16px;
+    border-radius: 2px;
+    outline: none;
+    display: block;
+    width: 90%;
+    height: 35px;
+    margin: 0 auto;
+    position: relative;
+    top: 12px;
+}
+.right .position .toolbar_title .notebookOption .head .text::-webkit-input-placeholder{
+    color: #2dbe60;
+    text-align: center;
+}
+.right .position .toolbar_title .notebookOption .head .text::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #2dbe60;
+    text-align: center;
+}
+.right .position .toolbar_title .notebookOption .head .text:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: #2dbe60;
+    text-align: center;
+}
+.right .position .toolbar_title .notebookOption .head .text:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color: #2dbe60;
+    text-align: center;
+}
+.right .position .toolbar_title .notebookOption .newnotebook_a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.right .position .toolbar_title .notebookOption .newnotebook_a:hover {
+	color: #2dbe60;
+}
+.right .position .toolbar_title .notebookOption .newnotebook_a img {
+	margin-left: 15px;
+    display: inline-block;
+	position: relative;
+	top: 20px;
+}
+.right .position .toolbar_title .notebookOption .newnotebook_a span {
+	display: inline-block;
+	position: relative;
+	top: 14px;
+}
+.right .position .toolbar_title .notebookOption .middle .notebookName {
+	
+}
+.right .position .toolbar_title .notebookOption .middle .notebookName:hover {
+	background: #2dbe60;
+	color: white;
+	cursor: pointer;
+}
+.right .position .toolbar_title .notebookOption .middle .notebookName span {
+    width: 90%;
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    top: 20px;
+    overflow: hidden;/* 隐藏溢出内容 */
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.right .position .toolbar_title .notebookOption .middle .notebookName img {
+	float: right;
+    margin-right: 12px;
+}
+/* 弹窗3 */
+.newnotebook {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background: white;
+	z-index: 1000;
+}
+.newnotebook .position {
+	width: 650px;
+	height: 310px;
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+.newnotebook .position img {
+	display: block;
+	margin: 0 auto;
+}
+.newnotebook .position span {
+	display: block;
+	color: rgb(163,163,163);
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	cursor: default;
+}
+.newnotebook .position input {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	font-size: 32px;
+	border: 0;
+    color: rgb(163,163,163);
+    outline: none;
+    text-align: center;
+    background: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;/* 隐藏溢出内容 */
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.newnotebook .position input::-webkit-input-placeholder{
+    color: rgb(163,163,163);
+    text-align: center;
+}
+.newnotebook .position input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: rgb(163,163,163);
+    text-align: center;
+}
+.newnotebook .position input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: rgb(163,163,163);
+    text-align: center;
+}
+.newnotebook .position input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color: rgb(163,163,163);
+    text-align: center;
+}
+.newnotebook .position a {
+	width: 190px;
+	height: 33px;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 5px;
+	text-align: center;
+}
+.newnotebook .position .cancel {
+    background-color: #d9d9d9;
+    border: 1px solid #d1d1d1;
+    margin-top: 40px;
+    margin-left: 130px;
+}
+.newnotebook .position .cancel:hover {
+	background: #D4D4D4;
+}
+.newnotebook .position .cancel span {
+	color: #606060;
+}
+.newnotebook .position .create {
+    background-color: #2dbe60;
+    border: 1px solid #2dbe60;
+}
+.newnotebook .position .create:hover {
+	background: #2DA250;
+}
+.newnotebook .position .create span {
+	color: white;
+}
+.newnotebook .position a span {
+	display: block;
+	cursor: pointer;
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 0;
+}
+/* 弹窗4 */
+.notebook {
+	width: 460px;
+	height: 100%;
+	display: none;
+	border-right: 3px solid rgba(236, 236, 236, 0.7);
+	position: absolute;
+	left: 71px;
+	background: white;
+	z-index: 99999;
+}
+.notebook .head {
+	height: 130px;
+	border-bottom: 1px solid #ececec;
+}
+.notebook .head div {
+	width: 90%;
+	height: 75px;
+	margin: 0 auto;
+}
+.notebook .head span {
+	display: inline-block;
+	float: left;
+	padding-top: 25px;
+	color: #878787;
+    font-size: 21px;
+    font-weight: 300;
+}
+.notebook .head img {
+	display: inline-block;
+	float: right;
+	padding-top: 30px;
+	cursor: pointer;
+}
+.notebook .head input {
+    border: solid 1px #e1e1e1;
+    font-size: 16px;
+    border-radius: 2px;
+    outline: none;
+    display: block;
+    width: 90%;
+    height: 40px;
+    margin: 0 auto;
+}
+.notebook .head input::-webkit-input-placeholder{
+    color: #878787;
+    text-align: center;
+}
+.notebook .head input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color: #878787;
+    text-align: center;
+}
+.notebook .head input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color: #878787;
+    text-align: center;
+}
+.notebook .head input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color: #878787;
+    text-align: center;
+}
+.notebook .middle div {
+    width: 90%;
+    margin: 0 auto;
+    height: 60px;
+    border-bottom: solid 1px #e1e1e1;
+}
+.notebook .middle div:hover {
+	background: #2dbe60;
+	color: white;
+	cursor: pointer;
+}
+.notebook .middle div span {
+    width: 85%;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    left: 5%;
+    top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notebook .middle img {
+	display: inline-block;
+	float: right;
+	margin-right: 35px;
+    position: relative;
+    top: -40px;
+}
+/* 弹窗4 end */

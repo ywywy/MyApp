@@ -1,0 +1,46 @@
+<%- include ./common/header.ejs  %>
+<div class="container-fluid">
+    <div class="col-sm-10 col-sm-offset-1" style="margin-top:50px;">
+        <div class="panel panel-default">
+            <div class="panel-heading" style="font-size: 20px;">
+                学生信息主页
+            </div>
+            <div class="panel-body">
+                <form role="form" class="form-inline">
+                    <div class="form-group">
+                        <input type="button" class="btn btn-default" value="添加学生信息"
+                            onclick="javascrtpt:window.location.href='http://localhost:4000/add'" style="height: 34px;">
+                    </div>
+                    <div class="form-group" style="float: right;">
+                        <button type="submit" class="btn btn-default"><a href="/login"
+                                style="text-decoration: none;">点击退出</a></button>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+        <div class="table-responsive">
+
+            <% for(var i=0;i<arr.length;i++){  %>
+            <ul class="aaa">
+                <li class="bbb">
+                    <img src="<%=arr[i].pic%>" class="img-circle">
+                </li>
+                <li class="ccc">
+                    <p>姓名:<span><%=arr[i].title%></span></p>
+                    <p>学号:<span><%=arr[i].price%></span></p>
+                    <p>电话号码:<span><%=arr[i].fee%></span></p>
+                    <p>创建时间:<%=moment(arr[i].createAt).format('YYYY/MM/DD HH:mm:ss')%></p>
+                    <a href="/product/update/<%=arr[i].id%>" class="btn btn-success">修改</a>
+                    <a href="/product/delete/<%=arr[i].id%>?img=<%=arr[i].pic%>" class="btn btn-danger">删除</a>
+                </li>
+            </ul>
+            <% }%>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<%- include  ./common/footer.ejs  %>
